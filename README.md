@@ -1,73 +1,82 @@
-igot-apps Implementation Demos
+# igot-apps Implementation Demos
+
 This repository contains demonstration code for implementing Swagger documentation in a Node.js application. Swagger is a powerful tool for documenting and testing APIs. This README provides an overview of the implementation and how to run the demo.
 
-Getting Started
+## Getting Started
+
 These instructions will help you set up and run the Swagger implementation demos on your local machine.
 
-Prerequisites
-Node.js and npm (Node Package Manager) should be installed on your machine.
-Installation
-Clone this repository to your local machine:
+### Prerequisites
 
+Node.js and npm (Node Package Manager) should be installed on your machine.
+
+### Installation
+
+1. Clone this repository to your local machine:
 
 git clone https://github.com/igot-apps/my_swagger_docs_demos_for_nodejs.git
-Navigate to the project directory:
+
+css
+Copy code
+
+2. Navigate to the project directory:
 
 cd my_swagger_docs_demos_for_nodejs.git
-Install the required dependencies:
+
+markdown
+Copy code
+
+3. Install the required dependencies:
 
 npm install
 
+markdown
+Copy code
 
-Running the Demo
-Start the Node.js server:
+## Running the Demo
+
+1. Start the Node.js server:
 
 npm node run start
 
-The server will start at http://127.0.0.1:3000.
+less
+Copy code
 
-Access the implimented Swagger UI documentation at:
+2. The server will start at http://127.0.0.1:3000.
 
-http://127.0.0.1:3000/docs to view  the Swagger documentation for the implemented API .
+3. Access the implemented Swagger UI documentation at:
 
-use can also interact with the api at the :
+[http://127.0.0.1:3000/docs](http://127.0.0.1:3000/docs) to view the Swagger documentation for the implemented API.
 
-http://127.0.0.1:3000/docs directly without a apl client like post man
+4. You can also interact with the API at:
 
+[http://127.0.0.1:3000/docs](http://127.0.0.1:3000/docs) directly without an API client like Postman.
 
-Test the APIs:
+5. Test the APIs:
 
-Use the Swagger UI interface to explore the available routes and test them interactively.
-For routes that require authentication, click the "Authorize" button to provide the Bearer token (e.g., "Bearer 7c612f1e-23a9-43f4-b5ed-0c02eb3a3d5f").
+- Use the Swagger UI interface to explore the available routes and test them interactively.
+- For routes that require authentication, click the "Authorize" button to provide the Bearer token (e.g., "Bearer 7c612f1e-23a9-43f4-b5ed-0c02eb3a3d5f").
 
-For simplicity sake a staked Bearer token is used, 
-which is :
+For simplicity's sake, a static Bearer token is used: `"Bearer 7c612f1e-23a9-43f4-b5ed-0c02eb3a3d5f"`.
 
- "Bearer 7c612f1e-23a9-43f4-b5ed-0c02eb3a3d5f"
+- Click the "Try it out" button for any route, provide required parameters, and click "Execute" to test the API.
 
+## Demos Overview
 
-Click the "Try it out" button for any route, provide required parameters, and click "Execute" to test the API.
-Demos Overview
-The demo in this repository showcase the following:
+The demos in this repository showcase the following:
 
+- Implemented Swagger documentation for Node.js APIs.
 
-Implemented Swagger documentation for Node.js APIs.
- 
-Folder Structure : 
+### Folder Structure
 
 my_swagger_docs_demos_for_nodejs.git/
 │
 ├── app/
-│   ├── controllers/
-│   ├── routes/
-│   ├── models/
-│
+├── controllers/
+├── routes/
+├── models/
 ├── docs/
-│
 ├── config/
-│
 ├── index.js
-│
 ├── package.json
-│
 └── README.md
